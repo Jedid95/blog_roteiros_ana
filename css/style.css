@@ -1,0 +1,131 @@
+/*** General ***/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/*** General end ***/
+
+/*** header ***/
+
+header{
+    width: 100%;
+    padding: 20px 2%;
+   
+}
+
+header .logo{
+    width: 160px;
+    height: 40px;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*background-image: url('../images/logo.png');*/
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+nav{
+    float: right;
+}
+
+nav.mobile-menu{
+    display: none;
+}
+
+nav.desktop-menu ul{
+    list-style-type: none;
+}
+
+nav.desktop-menu li{
+    float: left;
+    padding: 0 20px;
+}
+
+nav.desktop-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/*** header end ***/
+
+/*** Section First ***/
+.part-left-first{
+    float: left;
+    padding: 200px 2%;
+}
+
+.part-left-first h2{
+    font-size: 48px;
+}
+
+.part-left-first p{
+    padding-top: 12px;
+}
+
+.part-right-first{
+    width: 50%;
+    height: 650px;
+    background-size: cover;
+    background-image: url('../images/banner.jpg');
+    float: right;
+    
+}
+
+/*** Section First end ***/
+
+/*** Section Second ***/
+
+section.second .container{
+    padding: 0 2%;
+    width: 100%;
+    height: 400px;
+}
+
+.part-left-second{
+    width: 30%;
+    height: 100%;
+    background-size: cover;
+    background-image: url('../images/banner.jpg');
+    float: left;
+    
+}
+
+.part-right-second{
+    padding: 100px 2%;
+    float: left;
+    
+}
+
+.part-right-second h2{
+    font-size: 26px;
+}
+
+.part-right-second p{
+    padding-top: 12px;
+    max-width: 650px;
+    display: inline-block;
+}
+
+
+
+/*** Section Second end ***/
