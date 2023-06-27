@@ -94,8 +94,7 @@ nav.desktop-menu a{
     background-size: cover;
     background-position: center;
     background-image: url('../images/banner.jpg');
-    float: right;
-    
+    float: right; 
 }
 
 /*** Section Banner end ***/
@@ -109,6 +108,7 @@ nav.desktop-menu a{
 .item1-mosaico{
     background-position: center;
     background-size: cover;
+    padding: 60px 40px;
     width: 30%;
     height: 200px;
 }
@@ -118,7 +118,7 @@ nav.desktop-menu a{
     padding: 60px 40px;
     width: 100%;
     border: 1px solid #d0d1d1;
-    text-align: justify;
+    text-align: center;
 }
 
 .item2-mosaico p{
@@ -128,3 +128,41 @@ nav.desktop-menu a{
 
 
 /*** Section Mosaico end ***/
+
+
+
+
+/*** Responsivo ***/
+
+@media screen and (max-width: 1200px) {
+
+    .part-right-first{
+        display: none;
+    }
+    
+    .part-left-first{
+        float: none;
+        width: 100%;
+        text-align: center;
+        background-image: url('../images/banner.jpg');
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item1-mosaico{
+        width: 100%;
+        padding-top: 80%;
+    }
+
+    .item2-mosaico{
+        text-align: justify;
+        width: 100%;
+    }
+}
+
+
+/*** Responsivo end ***/
