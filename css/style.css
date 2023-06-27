@@ -47,8 +47,6 @@ nav{
     float: right;
 }
 
-/******Menu mobile*******/
-
 nav.mobile-menu{
     display: none;
     width: 32px;
@@ -160,16 +158,49 @@ nav.desktop-menu a{
     color: black;
 }
 
-
-
 /*** Section Mosaico end ***/
 
 
+/*** Section chamada-1 ***/
+.chamada-1 .descricao-1{
+    background-color: #f8f9fa;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+/*** Section chamada-1 end ***/
+.slide{
+    border: 1px solid #d0d1d1;
+	float: left;
+	width: 100%;
+}
+
+.img-slide-single{
+	float: left;
+	width: calc(100% / 9);
+	padding-top: calc(100% / 9);
+	background-color: blue;
+	border:6px solid white;
+}
+
+/*** Section slide ***/
+
+
+/*** Section slide end ***/
 
 
 /*** Responsivo ***/
 
 @media screen and (max-width: 1200px) {
+
+    .img-slide-single{
+		width: calc(100% / 6);
+		padding-top: calc(100% / 6);
+	}
+
+    .images-slide > div:nth-of-type(1n+7){
+		display: none;
+	}
 
     .part-right-first{
         display: none;
@@ -208,6 +239,19 @@ nav.desktop-menu a{
 
     nav.mobile-menu{
         display: block;
+    }
+
+    .chamada-1 .descricao-1{
+        text-align: justify;
+    }
+
+    .img-slide-single{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+
+    .images-slide > div:nth-of-type(1n+4){
+        display: none;
     }
 }
 
